@@ -17,27 +17,110 @@ MonitorSDCTest – SDC-Prototyp nach IEEE 11073
 Dieses Projekt enthält eine funktionsfähige Simulation eines medizinischen SDC Providers und Consumers gemäß dem IEEE 11073-Standard. Die Kommunikation basiert auf der Open-Source-Bibliothek sdc11073 von Drägerwerk.
 
 
-1. Voraussetzungen
+---
 
-- Python 3.8 bis 3.11 (empfohlen) hier wurde Python 3.11.9 benutzt
-- Git
-- Internetverbindung (für die Paketinstallation)
-- Optional: Virtuelle Umgebung (empfohlen)
+Schnellstart
 
-2. Repository klonen
-   
-bash:
+1. Repository klonen
+
+powershell:
+
 git clone https://github.com/maxhartmann123/Thesis-SDC-Prototyp.git
 cd Thesis-SDC-Prototyp
 
-3. Virtuelle Umgebung einrichten
+---
 
-bash:
+2. Virtuelle Umgebung einrichten
+
+powershell:
+
 python -m venv .venv
-source .venv/bin/activate   # unter Windows: .venv\Scripts\activate
 
-4. sdc11073-Bibliothek installieren
+---
 
-bash:
-pip install sdc11073
-(To update, run: python.exe -m pip install --upgrade pip)
+3. Virtuelle Umgebung aktivieren
+
+Empfohlen (CMD statt PowerShell verwenden):
+
+cmd .\.venv\Scriptsctivate.bat
+
+In PowerShell:
+powershell:
+
+cmd /k ".\.venv\Scriptsctivate.bat"
+
+---
+
+4. Abhängigkeiten installieren
+
+```powershell
+.\.venv\Scripts\pip.exe install sdc11073
+```
+
+> Optional mit Kompression:
+```powershell
+.\.venv\Scripts\pip.exe install "sdc11073[lz4]"
+```
+
+---
+
+Skript ausführen
+
+#### Variante A: Im Unterordner
+powershell
+cd Thesis-SDC-Prototyp
+..\.\.venv\Scripts\python.exe Simulationstest-functions.py
+
+#### Variante B: Direkt vom Hauptverzeichnis
+powershell
+.\.venv\Scripts\python.exe Thesis-SDC-Prototyp\Simulationstest-functions.py
+---
+
+Bekannte Fehler & Lösungen:
+
+Fehler: `Activate.ps1 kann nicht geladen werden`
+plaintext Die Ausführung von Skripts auf diesem System ist deaktiviert.
+
+Lösung: Statt `.ps1` einfach `.bat` aktivieren:
+
+powershell:
+
+cmd /k ".\.venv\Scriptsctivate.bat"
+
+---
+
+Fehler: `ModuleNotFoundError: No module named 'sdc11073'`
+
+Lösung: 
+powershell:
+.\.venv\Scripts\pip.exe install sdc11073
+
+---
+
+Fehler: `[Errno 2] No such file or directory`
+
+Lösung: Sicherstellen, dass du im richtigen Verzeichnis bist:
+powershell: 
+
+cd Thesis-SDC-Prototyp
+dir  # zeigt, ob die .py-Datei vorhanden ist
+
+---
+Abhängigkeiten
+
+Die wichtigsten Python-Pakete:
+
+- `sdc11073` – SDC-Stack
+- `lxml` – XML-Verarbeitung (wird automatisch mit installiert)
+- 
+---
+
+Hinweis
+Dieses Projekt ist ein Demonstrator für Test- und Entwicklungszwecke und wurde im Rahmen einer Thesis Entwickelt.  
+Es ist nicht für den klinischen Einsatz gedacht und entspricht nicht IEC 62304 oder MDR-Anforderungen.
+---
+Kontakt:
+Maximilian Hartmann
+maxi.hartmann2000@gmail.com
+Projekt: Bachelorarbeit – SDC-Prototyp  
+Stand: Juli 2025
