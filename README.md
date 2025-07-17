@@ -122,5 +122,5 @@ Es ist nicht für den klinischen Einsatz gedacht und entspricht nicht IEC 62304 
 Kontakt:
 Maximilian Hartmann
 maxi.hartmann2000@gmail.com
-Projekt: Bachelorarbeit – SDC-Prototyp  
+Projekt: Bachelorarbeit - SDC-Prototyp - KS
 Stand: Juli 2025
