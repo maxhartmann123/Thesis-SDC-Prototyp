@@ -42,25 +42,25 @@ python -m venv .venv
 
 Empfohlen (CMD statt PowerShell verwenden):
 
-cmd .\.venv\Scriptsctivate.bat
+cmd .\.venvScripts\activate.bat
 
 In PowerShell:
 powershell:
 
-cmd /k ".\.venv\Scriptsctivate.bat"
+cmd /k ".\.venv\Scripts\activate.bat"
 
 ---
 
 4. Abhängigkeiten installieren
 
-```powershell
+powershell
 .\.venv\Scripts\pip.exe install sdc11073
-```
 
 > Optional mit Kompression:
-```powershell
+
+powershell
+
 .\.venv\Scripts\pip.exe install "sdc11073[lz4]"
-```
 
 ---
 
