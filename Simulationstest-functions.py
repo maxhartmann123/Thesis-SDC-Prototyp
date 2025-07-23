@@ -160,8 +160,9 @@ def run(tls: bool, timeout: int = 10) -> reference_consumer.TestCollector:
         
         # Kurze Pause
         time.sleep(2)
+        
         # Nach 3 Sekunden anfangen, auf Provider-Bereitschaft zu prüfen
-        # Diese Eigenschaften müssten in der Provider-Implementierung ergänzt werden
+        
         elapsed = time.time() - start_time
         if elapsed >= 3:
             try:
