@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SDC11073 Vitalparameter-Monitor Durchsatz- und Jittertest (überarbeitet)
 
+SDC11073 Vitalparameter-Monitor Durchsatztest
 Misst, wie viele Updates pro Sekunde empfangen werden und berechnet die
 Intervalldauer (anstelle von Send-Zeitstempel), mit höherer Zeitauflösung
 und Vermeidung von 0.0 ms Intervallen.
+
 """
 import os
 import sys
