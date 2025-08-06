@@ -105,8 +105,9 @@ Fehler: `[Errno 2] No such file or directory`
 Lösung: Sicherstellen, dass du im richtigen Verzeichnis bist:
 powershell: 
 
-cd Thesis-SDC-Prototyp
-dir  # zeigt, ob die .py-Datei vorhanden ist
+cd Thesis-SDC-Prototyp dir  
+
+# zeigt, ob die .py-Datei vorhanden ist
 
 ---
 Abhängigkeiten
