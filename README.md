@@ -107,7 +107,7 @@ powershell:
 
 cd Thesis-SDC-Prototyp dir  
 
-# zeigt, ob die .py-Datei vorhanden ist
+zeigt, ob die .py-Datei vorhanden ist
 
 ---
 Abhängigkeiten
