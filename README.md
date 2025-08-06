@@ -88,7 +88,7 @@ Lösung: Statt `.ps1` einfach `.bat` aktivieren:
 
 powershell:
 
-cmd /k ".\.venv\Scriptsctivate.bat"
+cmd /k ".\.venv\Scriptsactivate.bat"
 
 ---
 
