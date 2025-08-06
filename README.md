@@ -69,11 +69,14 @@ Skript ausführen
 #### Variante A: Im Unterordner
 powershell
 cd Thesis-SDC-Prototyp
+
 ..\.\.venv\Scripts\python.exe Simulationstest-functions.py
 
 #### Variante B: Direkt vom Hauptverzeichnis
 powershell
+
 .\.venv\Scripts\python.exe Thesis-SDC-Prototyp\Simulationstest-functions.py
+
 ---
 
 Bekannte Fehler & Lösungen:
